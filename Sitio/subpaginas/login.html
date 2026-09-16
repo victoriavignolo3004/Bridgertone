@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bridgerton - Iniciar Sesión</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="logo" href="../index.html">BRIDGERTON</a>
+  <ul class="navlinks">
+    <li><a href="laserie.html">La serie</a></li>
+    <li><a href="personajes.html">Personajes</a></li>
+    <li><a href="temporadas.html">Temporadas</a></li>
+    <li><a href="galeria.html">Galería</a></li>
+    <li><a href="ladywhistledown.html">Lady Whistledown</a></li>
+    <li><a href="login.html">Iniciar Sesión</a></li>
+  </ul>
+</nav>
+
+<main class="page-container" style="max-width: 500px; margin: 50px auto; padding: 0 5vw;">
+  <div class="auth-card">
+    <div class="auth-tabs">
+      <button class="auth-tab active" id="loginTab">Iniciar Sesión</button>
+    </div>
+
+    <!-- Formulario Iniciar Sesión -->
+    <form id="loginForm" class="auth-form active" action="login.php" method="POST">
+      <h2>Bienvenido de nuevo</h2>
+      <p>Ingresá tus datos para acceder a contenido exclusivo.</p>
+      
+      <div class="form-group">
+        <label for="loginUser">Usuario</label>
+        <input type="text" id="loginUser" name="USUARIO" placeholder="Tu usuario" required>
+      </div>
+
+      <div class="form-group">
+        <label for="loginPassword">Contraseña</label>
+        <input type="password" id="loginPassword" name="CONTRASEÑA" placeholder="••••••••" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary-full">Ingresar</button>
+    </form>
+
+    <!-- Formulario Registro -->
+    <form id="registerForm" class="auth-form" action="registro.php" method="POST">
+      <h2>Unite a la Alta Sociedad</h2>
+      <p>Creá tu cuenta para recibir el boletín de Lady Whistledown.</p>
+
+      <div class="form-group">
+        <label for="regUser">Usuario</label>
+        <input type="text" id="regUser" name="USUARIO" placeholder="Tu usuario" required>
+      </div>
+
+      <div class="form-group">
+        <label for="regPassword">Contraseña</label>
+        <input type="password" id="regPassword" name="CONTRASEÑA" placeholder="••••••••" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary-full">Crear Cuenta</button>
+    </form>
+  </div>
+</main>
+
+<footer>
+  <p>Bridgerton - Sitio conceptual - Trabajo académico - Producción Digital II - UP - Vignolo Victoria</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
